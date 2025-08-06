@@ -1,6 +1,6 @@
 # Candidate Recommendation Engine [🔗](https://huggingface.co/spaces/stargazingjellyfish/CandidateRecEngine)
 
-This project helps users rank candidate resumes based on their semantic similarity to a given job description. Optionally, it uses an LLM to generate a brief summary explaining why the candidate might be a good fit.
+This project helps users rank candidate resumes based on their semantic similarity to a given job description. Optionally, it uses an LLM to generate a brief summary explaining why the candidate might be a good fit and what are the gaps.
 
 Live demo: [Click here](https://huggingface.co/spaces/stargazingjellyfish/CandidateRecEngine)
 
@@ -65,3 +65,42 @@ The app computes similarity for all resumes but returns only the top 5. Addition
 - Summary section visually formatted for readability.
 - Readable output: candidates ranked in a table, summaries shown in a scrollable, formatted section
 - AI-generated summaries use bullet points for improved scanning and comprehension
+
+## 📊 Output Samples
+
+### 🎯 Use Case 1:
+
+Input: 
+- 6 resumes submitted
+- AI summary option enabled
+
+Output:
+- Top 5 resumes get outputted, in descending order of similarity score (as expected, keyword stuffer is ranked highest)
+- AI summary for top 3 is generated, providing a balanced view of candidates' skills and skill gaps
+- * LLM is able to detect the keyword stuffing and mentions the high cosine similarity may not be sufficient, suggesting a deepr look into the candidate's experiences. 
+
+<img width="3355" height="2065" alt="Case 1 Output: Generic Use case" src="https://github.com/user-attachments/assets/719d9f2d-a5db-4ef3-90b6-04a042ef7cec" />
+
+### 🎯 Use Case 2:
+
+Input:
+- 2 resumes submitted
+- AI-summary option not enabled
+
+Output:
+- 2/2 resumes ranked
+- No AI summary
+- * Contrast between Cases 1 and 2 shows the advantage of an AI summary
+
+  <img width="3730" height="2040" alt="Case 2 Output: No AI Summary" src="https://github.com/user-attachments/assets/0d9c42d9-fd6b-4f03-9327-c08b08deebe0" />
+
+### 🎯 Use Case 3:
+
+Input: 
+- Resumes with instructions for LLMs submitted
+
+Output:
+- No summarization is done, and an alert message is returned by the model
+
+<img width="1544" height="1029" alt="Case 3 Output: Malicious Resume" src="https://github.com/user-attachments/assets/e2be4a4c-03d2-4828-bd51-b08f8d2dcbb5" />
+
