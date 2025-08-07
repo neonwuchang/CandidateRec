@@ -1,4 +1,4 @@
-# Candidate Recommendation Engine [🔗](https://huggingface.co/spaces/stargazingjellyfish/CandidateRecEngine)
+# Candidate Recommendation Engine 🔗
 
 This project helps users rank candidate resumes based on their semantic similarity to a given job description. Optionally, it uses an LLM to generate a brief summary explaining why the candidate might be a good fit and what are the gaps.
 
