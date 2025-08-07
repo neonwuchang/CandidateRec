@@ -2,7 +2,7 @@
 
 This project helps users rank candidate resumes based on their semantic similarity to a given job description. Optionally, it uses an LLM to generate a brief summary explaining why the candidate might be a good fit and what are the gaps.
 
-Live demo: [Click here](https://e8ce3d878ce7eb9062.gradio.live/)
+Live demo: [Click here](https://27a65edcc8092fbc63.gradio.live/)
 
 ### 📚 Definitions, Acronyms, Abbreviations
 
