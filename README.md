@@ -2,7 +2,7 @@
 
 This project helps users rank candidate resumes based on their semantic similarity to a given job description. Optionally, it uses an LLM to generate a brief summary explaining why the candidate might be a good fit and what are the gaps.
 
-Live demo: [Click here](https://huggingface.co/spaces/stargazingjellyfish/CandidateRecEngine)
+Live demo: [Click here](https://e8ce3d878ce7eb9062.gradio.live/)
 
 ### 📚 Definitions, Acronyms, Abbreviations
 
@@ -104,4 +104,15 @@ Output:
 - No summarization is done, and an alert message is returned by the model
 
 <img width="1544" height="1029" alt="Case 3 Output: Malicious Resume" src="https://github.com/user-attachments/assets/e2be4a4c-03d2-4828-bd51-b08f8d2dcbb5" />
+
+### 🎯 Use Case 4 (Updated App):
+
+Input: 
+- Resumes in pdf format
+
+Output:
+- Correct candidate names and similarity scores
+
+<img width="3777" height="2035" alt="image" src="https://github.com/user-attachments/assets/03e72dd0-620e-4714-b73d-b361344523c3" />
+
 
