@@ -26,7 +26,7 @@ Live demo: [Click here](https://huggingface.co/spaces/stargazingjellyfish/Candid
 #### ⚠️ Constraints
 
 - Job descriptions are limited to 1000 words (to control LLM input tokens size)
-- Resume upload limited to .txt and .pdf files (expandable as required)
+- Resume upload limited to .txt (expandable, currently being expanded to .pdf)
 - Groq API is subject to free-tier rate limits and latency (suitable for proof-of-concept, but can easily switch to LLM/provider of choice)
 
 #### ⚠️ Assumptions
