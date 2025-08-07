@@ -15,7 +15,7 @@ Live demo: [Click here](https://huggingface.co/spaces/stargazingjellyfish/Candid
 #### ⚙️ Product Functionality / Features
 
 - Accepts job description via text input (max 1000 words)
-- Accepts candidate resumes via file upload (initially .txt format)
+- Accepts candidate resumes via file upload (initially .txt format, now updated to .pdf)
 - Generates semantic embeddings using SentenceTransformers
 - Calculates cosine similarity between job description and each resume
 - Displays top 5 most relevant candidates with name/ID and similarity score
@@ -26,12 +26,13 @@ Live demo: [Click here](https://huggingface.co/spaces/stargazingjellyfish/Candid
 #### ⚠️ Constraints
 
 - Job descriptions are limited to 1000 words (to control LLM input tokens size)
-- Resume upload limited to .txt (expandable, currently being expanded to .pdf)
+- Resume upload limited to .pdf
 - Groq API is subject to free-tier rate limits and latency (suitable for proof-of-concept, but can easily switch to LLM/provider of choice)
 
 #### ⚠️ Assumptions
 
-- Resume file names are formatted with a single extension and contain candidate name/ID, e.g. john_doe_resume.txt
+<!--- Old Constraint: Resume file names are formatted with a single extension and contain candidate name/ID, e.g. john_doe_resume.txt -->
+- Candidate name is conatined within the first line of the resume
 
 ## ⚙️ Behind the Scenes: Design and Engineering Decisions
 
@@ -49,7 +50,7 @@ The goal was to rapidly prototype a minimum viable product that’s lightweight 
 ### 📚 Designing for Robustness and Simplicity
 
 - Input Constraints: Job descriptions are capped at 1000 words to prevent token bloat in LLM requests.
-- File Handling: Only .txt files are supported, reducing complexity in file parsing and increasing predictability.
+- File Handling: Only .pdf files (a common resume file type) are supported, reducing complexity in file parsing and increasing predictability.
 - Fallback and Error Handling: API and encoding failures are handled gracefully with simple error alerts to users; detailed error messages are logged but not exposed to users to avoid leaking system details.
 - AI-generated Summary: It is limited to top 3 candidates and offered as an optional feature to manage cost and API usage.
 - LLM Prompt: The LLM is prompted to act as a recruiter, respond in bullet points (boosts readabiloty and improves user experience), and reject any attempts at prompt manipulation (e.g., prompts trying to manipulate the model to give a higher recommendation).
