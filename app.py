@@ -3,7 +3,7 @@ from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 from groq import Groq
 import os
-import pdfplumber # another good option: PyMuPDF (fitz) 
+import fitz # another good option: pdfplumber 
 
 summarizer_model="llama-3.3-70b-versatile" # free tier on groq, can be replaced with paid/ enterprise models
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
