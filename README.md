@@ -15,7 +15,7 @@ Live demo: [Click here](https://huggingface.co/spaces/stargazingjellyfish/CandRe
 #### ⚙️ Product Functionality / Features
 
 - Accepts job description via text input (max 1000 words)
-- Accepts candidate resumes via file upload (initially .txt format, now updated to .pdf)
+- Accepts candidate resumes via text input or file upload (initially .txt format, now updated to .pdf)
 - Generates semantic embeddings using SentenceTransformers
 - Calculates cosine similarity between job description and each resume
 - Displays top 5 most relevant candidates with name/ID and similarity score
@@ -63,6 +63,7 @@ The app computes similarity for all resumes but returns only the top 5. Addition
 
 - Job description textbox with clear placeholder and word limit.
 - Upload interface supporting multiple files.
+- Resume text input support.
 - Summary section visually formatted for readability.
 - Readable output: candidates ranked in a table, summaries shown in a scrollable, formatted section
 - AI-generated summaries use bullet points for improved scanning and comprehension
