@@ -27,6 +27,7 @@ Live demo: [Click here](https://huggingface.co/spaces/stargazingjellyfish/CandRe
 
 - Job descriptions are limited to 1000 words (to control LLM input tokens size)
 - Resume upload limited to .pdf
+- Pasted resimes are limited to 2000 words (to control LLM input tokens size)
 - Groq API is subject to free-tier rate limits and latency (suitable for proof-of-concept, but can easily switch to LLM/provider of choice)
 
 #### ⚠️ Assumptions
