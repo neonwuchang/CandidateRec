@@ -69,7 +69,23 @@ The app computes similarity for all resumes but returns only the top 5. Addition
 - Readable output: candidates ranked in a table, summaries shown in a scrollable, formatted section
 - AI-generated summaries use bullet points for improved scanning and comprehension
 
-## 📊 Output Samples
+## 📊 Product Demo
+
+### 🎯 Use Case 0:  
+
+Input: 
+- Job description
+- PDF resume
+- Valid text resume
+- Invalid text resume (exceeds word limit)
+
+Output:
+- Top resumes displayed
+- AI Summary generated
+- Invalid resume skipped in output table and AI Summary
+
+<img width="3772" height="2017" alt="image" src="https://github.com/user-attachments/assets/371b35ae-decf-4c1a-aa27-cf20025d75a9" />
+
 
 ### 🎯 Use Case 1:
 
