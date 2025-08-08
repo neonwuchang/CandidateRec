@@ -4,6 +4,8 @@ This project helps users rank candidate resumes based on their semantic similari
 
 Live demo: [Click here](https://huggingface.co/spaces/stargazingjellyfish/CandRecEng)
 
+<img width="2339" height="2773" alt="Screenshot 2025-08-08 121728" src="https://github.com/user-attachments/assets/9104aed1-cac3-4d8a-8812-279fb07301d4" />
+
 ### 📚 Definitions, Acronyms, Abbreviations
 
 - LLM: Large Language Model
