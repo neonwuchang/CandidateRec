@@ -3,3 +3,4 @@ sentence-transformers
 scikit-learn
 groq
 pdfplumber
+PyMuPDF
